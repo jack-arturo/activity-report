@@ -1,0 +1,4080 @@
+{
+  "generatedAt": "2026-01-05T12:56:37.892Z",
+  "periodStart": "2026-01-04T08:56:37.892Z",
+  "commits": [
+    {
+      "type": "commit",
+      "hash": "4a91593c264cb6fc7ffd3439ef36f9bc241a0e83",
+      "shortHash": "4a91593",
+      "date": "2026-01-05T10:21:31+01:00",
+      "headline": "Update wrangler.toml for Cloudflare Pages deployment",
+      "body": "Reconfigure wrangler.toml for Cloudflare Pages by updating the project name, removing worker-specific settings, and specifying the build output directory. Environment variables and secrets are now managed according to Pages conventions.",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 7,
+        "deleted": 18,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "wrangler.toml",
+          "added": 7,
+          "deleted": 18
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "1b07c5ca4caf256bab92e011d4ab99c0d4a297ae",
+      "shortHash": "1b07c5c",
+      "date": "2026-01-05T10:04:39+01:00",
+      "headline": "Add developer activity report tool and Cloudflare Workers config",
+      "body": "Introduced a new 'developer_activity_report' tool in mcp-tools.json and tool-filters.json, providing schema and description for generating developer activity reports. Added initial implementation at tools/developer-activity-report.js. Updated Cloudflare Workers configuration in mcp-tools.json. Modified related workflow documentation to reference the new tool.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 5834,
+        "deleted": 6267,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "config/mcp-tools.json",
+          "added": 4817,
+          "deleted": 6042
+        },
+        {
+          "file": "config/tool-filters.json",
+          "added": 9,
+          "deleted": 0
+        },
+        {
+          "file": "src/services/mcp-executor.js",
+          "added": 2,
+          "deleted": 0
+        },
+        {
+          "file": "tools/developer-activity-report.js",
+          "added": 445,
+          "deleted": 0
+        },
+        {
+          "file": "workflows/daily/wpf-support-dashboard.md",
+          "added": 301,
+          "deleted": 142
+        },
+        {
+          "file": "workflows/on-demand/wpf-support-dashboard-agent-test.md",
+          "added": 260,
+          "deleted": 83
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "1a2ce22caea6d46b27b59dd235cc8076be2a5e1b",
+      "shortHash": "1a2ce22",
+      "date": "2026-01-05T07:39:39+01:00",
+      "headline": "docs: update diagrams for Streamable HTTP transport",
+      "body": "- Replace SSE Bridge references with MCP Bridge in diagrams",
+      "repo": "automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "automem",
+      "remoteUrl": "https://github.com/verygoodplugins/automem",
+      "stats": {
+        "added": 102,
+        "deleted": 62,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "connection",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "sequence",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "docs/MCP_SSE.md",
+          "added": 62,
+          "deleted": 44
+        },
+        {
+          "file": "docs/MONITORING_AND_BACKUPS.md",
+          "added": 20,
+          "deleted": 0
+        },
+        {
+          "file": "docs/RAILWAY_DEPLOYMENT.md",
+          "added": 20,
+          "deleted": 18
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "0d70a2a9037743059dbb3bc1ca1902cdc9ad5b5c",
+      "shortHash": "0d70a2a",
+      "date": "2026-01-05T07:35:11+01:00",
+      "headline": "docs: add mermaid diagrams for architecture visualization",
+      "body": "- Add 4 diagrams to README.md (architecture, graph vs vector, bridge discovery, scoring)",
+      "repo": "automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "automem",
+      "remoteUrl": "https://github.com/verygoodplugins/automem",
+      "stats": {
+        "added": 386,
+        "deleted": 42,
+        "files": 12
+      },
+      "files": [
+        {
+          "file": "2",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "2",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "1",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "1",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "1",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "all",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "INSTALLATION.md",
+          "added": 34,
+          "deleted": 17
+        },
+        {
+          "file": "README.md",
+          "added": 116,
+          "deleted": 25
+        },
+        {
+          "file": "docs/MCP_SSE.md",
+          "added": 79,
+          "deleted": 0
+        },
+        {
+          "file": "docs/MONITORING_AND_BACKUPS.md",
+          "added": 63,
+          "deleted": 0
+        },
+        {
+          "file": "docs/RAILWAY_DEPLOYMENT.md",
+          "added": 56,
+          "deleted": 0
+        },
+        {
+          "file": "docs/TESTING.md",
+          "added": 38,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T07:02:00",
+      "headline": "Daily Context Briefing",
+      "tags": [
+        "workflow"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T06:45:00",
+      "headline": "Deployed Sunset Voyages",
+      "tags": [
+        "deployment"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "09e5ebd4c492fa2fead61c236d183fafaf717cb4",
+      "shortHash": "09e5ebd",
+      "date": "2026-01-05T06:00:30+01:00",
+      "headline": "Enhance voice-client functionality with voice interrupt detection and new controls",
+      "body": "- Added voice interrupt feature to allow users to interrupt playback by speaking.",
+      "repo": "uncensored-voice-server",
+      "owner": "verygoodplugins",
+      "repoSlug": "uncensored-voice-server",
+      "remoteUrl": "https://github.com/verygoodplugins/uncensored-voice-server",
+      "stats": {
+        "added": 999,
+        "deleted": 335,
+        "files": 9
+      },
+      "files": [
+        {
+          "file": "new",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "controls",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "session",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "code",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/voice-client.js",
+          "added": 573,
+          "deleted": 130
+        },
+        {
+          "file": "src/ollama-client.js",
+          "added": 31,
+          "deleted": 27
+        },
+        {
+          "file": "src/personality.js",
+          "added": 47,
+          "deleted": 35
+        },
+        {
+          "file": "src/server.js",
+          "added": 265,
+          "deleted": 125
+        },
+        {
+          "file": "src/session-manager.js",
+          "added": 83,
+          "deleted": 18
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T05:34:00",
+      "headline": "Midnight Miqu 70B Migration",
+      "tags": [
+        "ai"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "335a78dc60cf2821eb095cd276c74e8d81418469",
+      "shortHash": "335a78d",
+      "date": "2026-01-05T05:28:33+01:00",
+      "headline": "docs: Update MCP documentation and server implementation for Streamable HTTP support",
+      "body": "Renames SSE bridge to MCP bridge in documentation, clarifies transport options, and emphasizes Streamable HTTP as the recommended protocol. Updates server implementation to support both Streamable HTTP and deprecated SSE, including enhancements for session management and health checks. Adds comprehensive tests for Streamable HTTP transport and ensures backward compatibility with SSE.",
+      "repo": "automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "automem",
+      "remoteUrl": "https://github.com/verygoodplugins/automem",
+      "stats": {
+        "added": 403,
+        "deleted": 35,
+        "files": 3
+      },
+      "files": [
+        {
+          "file": "docs/MCP_SSE.md",
+          "added": 85,
+          "deleted": 27
+        },
+        {
+          "file": "mcp-sse-server/server.js",
+          "added": 119,
+          "deleted": 8
+        },
+        {
+          "file": "mcp-sse-server/test/server.test.js",
+          "added": 199,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "5f55c6165ffc5a043bea430356ed4a93c10bec48",
+      "shortHash": "5f55c61",
+      "date": "2026-01-05T05:27:04+01:00",
+      "headline": "docs: add Streamable HTTP transport support",
+      "body": "- Add Streamable HTTP as primary remote transport in server.json",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 51,
+        "deleted": 23,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "SSE",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "README",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "HTTP",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "INSTALLATION.md",
+          "added": 26,
+          "deleted": 17
+        },
+        {
+          "file": "README.md",
+          "added": 6,
+          "deleted": 5
+        },
+        {
+          "file": "server.json",
+          "added": 19,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "14a06ce7f0b7797289f149d04eed0b871d4caa0e",
+      "shortHash": "14a06ce",
+      "date": "2026-01-05T04:57:31+01:00",
+      "headline": "feat: upgrade SDK to 1.25.1 and add MCP registry support",
+      "body": "- Upgrade @modelcontextprotocol/sdk from 0.5.0 to 1.25.1",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 1206,
+        "deleted": 55,
+        "files": 19
+      },
+      "files": [
+        {
+          "file": "remote",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "release-please",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "mcp-publisher",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 4,
+          "deleted": 0
+        },
+        {
+          "file": "dist/automem-client.d.ts.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/automem-client.js",
+          "added": 25,
+          "deleted": 16
+        },
+        {
+          "file": "dist/automem-client.js.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/cli/claude-code.d.ts.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/cli/claude-code.js",
+          "added": 81,
+          "deleted": 21
+        },
+        {
+          "file": "dist/cli/claude-code.js.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/cli/queue.d.ts.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/cli/queue.js",
+          "added": 56,
+          "deleted": 2
+        },
+        {
+          "file": "dist/cli/queue.js.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "dist/index.js",
+          "added": 26,
+          "deleted": 1
+        },
+        {
+          "file": "dist/index.js.map",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "package-lock.json",
+          "added": 975,
+          "deleted": 7
+        },
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "release-please-config.json",
+          "added": 11,
+          "deleted": 0
+        },
+        {
+          "file": "server.json",
+          "added": 20,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "3dc9855c1667a831e112dd37e3170f1c4bcc9be8",
+      "shortHash": "3dc9855",
+      "date": "2026-01-05T04:17:19+01:00",
+      "headline": "Fix agent profile warnings and tool schema validation",
+      "body": "- Normalize input_schema to inputSchema in native tool registry",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 29,
+        "deleted": 3,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "research_urls",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "metadata",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "env",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "src/agents/profiles/hub-developer.js",
+          "added": 8,
+          "deleted": 1
+        },
+        {
+          "file": "src/agents/profiles/wp-fusion-expert.js",
+          "added": 7,
+          "deleted": 0
+        },
+        {
+          "file": "src/claude/native-tools/registry.js",
+          "added": 14,
+          "deleted": 2
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "934a58b2b5c483505c2e2e727df4907200066d32",
+      "shortHash": "934a58b",
+      "date": "2026-01-05T04:14:55+01:00",
+      "headline": "Add support workflow and bug diagnosis scenarios to test harness",
+      "body": "- wpf-support-investigation: Simulates daily workflow task format",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 44,
+        "deleted": 0,
+        "files": 3
+      },
+      "files": [
+        {
+          "file": "Tests",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "6",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "test/agent-scenarios.json",
+          "added": 44,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "76ac30a079852af56ca0a47af9cf1e9b4c09831b",
+      "shortHash": "76ac30a",
+      "date": "2026-01-05T04:03:25+01:00",
+      "headline": "Add universal agent test harness with scenario-based evaluation",
+      "body": "- Add test-agent-scenarios.js runner with rubric-based evaluation",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 25,
+        "deleted": 17,
+        "files": 7
+      },
+      "files": [
+        {
+          "file": "rubrics",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "prevents",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "4",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Developer",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "4",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/test-agent-scenarios.js",
+          "added": 16,
+          "deleted": 9
+        },
+        {
+          "file": "test/agent-scenarios.json",
+          "added": 9,
+          "deleted": 8
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "5bea6818d9650bae1fbcd7258d0aeb80823088b8",
+      "shortHash": "5bea681",
+      "date": "2026-01-05T03:46:56+01:00",
+      "headline": "Enhance file locking in process-session-memory.py for improved error handling",
+      "body": "Updated the file locking mechanism in process-session-memory.py to handle OSError exceptions more robustly. Added logic to ensure proper locking and unlocking of files, including handling empty files and restoring the original file position after operations. This change aims to enhance the reliability of session memory processing.",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 19,
+        "deleted": 2,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 19,
+          "deleted": 2
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "71faaedc3a69149e33df37bdf03186bfb3d2010c",
+      "shortHash": "71faaed",
+      "date": "2026-01-05T03:19:38+01:00",
+      "headline": "Add DALL-E hero image with dramatic sunset cruise ship",
+      "body": "- Generated photorealistic hero image of luxury cruise ship sailing into golden sunset",
+      "repo": "sunset-voyages",
+      "owner": "jack-arturo",
+      "repoSlug": "sunset-voyages",
+      "remoteUrl": "https://github.com/jack-arturo/sunset-voyages",
+      "stats": {
+        "added": 14,
+        "deleted": 7,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "hero",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "text",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/hero.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "index.html",
+          "added": 14,
+          "deleted": 7
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T03:08:00",
+      "headline": "WP Fusion Snippet v1.1",
+      "tags": [
+        "wp-fusion"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "0b8016c399274a9a2a68acac91c984f42f54ac36",
+      "shortHash": "0b8016c",
+      "date": "2026-01-05T03:07:11+01:00",
+      "headline": "Add wrangler.toml for Pages configuration",
+      "body": "Addresses warning about missing pages_build_output_dir field.",
+      "repo": "sunset-voyages",
+      "owner": "jack-arturo",
+      "repoSlug": "sunset-voyages",
+      "remoteUrl": "https://github.com/jack-arturo/sunset-voyages",
+      "stats": {
+        "added": 8,
+        "deleted": 0,
+        "files": 3
+      },
+      "files": [
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "wrangler.toml",
+          "added": 8,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "3205b8cb90b1bc0a3734a2d591c2df624cc47629",
+      "shortHash": "3205b8c",
+      "date": "2026-01-05T03:05:47+01:00",
+      "headline": "docs: update changelog for v2.0.0 release",
+      "body": "- Added Markdown-to-HTML conversion feature",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 10,
+        "deleted": 1,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "Windows",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Infrastructure",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "release",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "CHANGELOG.md",
+          "added": 10,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "fc9c146c8cfce623a164e724bd7faa9b61211ea5",
+      "shortHash": "fc9c146",
+      "date": "2026-01-05T03:05:21+01:00",
+      "headline": "Add Stripe checkout integration and success page",
+      "body": "- Create functions/api/create-checkout-session.js for Stripe",
+      "repo": "sunset-voyages",
+      "owner": "jack-arturo",
+      "repoSlug": "sunset-voyages",
+      "remoteUrl": "https://github.com/jack-arturo/sunset-voyages",
+      "stats": {
+        "added": 382,
+        "deleted": 13,
+        "files": 8
+      },
+      "files": [
+        {
+          "file": "success.html",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "checkout.html",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "\"Complete",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "checkout.html",
+          "added": 48,
+          "deleted": 13
+        },
+        {
+          "file": "functions/api/create-checkout-session.js",
+          "added": 84,
+          "deleted": 0
+        },
+        {
+          "file": "success.html",
+          "added": 250,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T03:02:00",
+      "headline": "Sunset Voyages Launch",
+      "tags": [
+        "deployment"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "e2b90ceedf80539ad45cbf56f6fdf6ef7a21c7ec",
+      "shortHash": "e2b90ce",
+      "date": "2026-01-05T03:00:22+01:00",
+      "headline": "Initial commit: Sunset Voyages satirical site",
+      "body": "Dark comedy parody of predatory senior cruise services:",
+      "repo": "sunset-voyages",
+      "owner": "jack-arturo",
+      "repoSlug": "sunset-voyages",
+      "remoteUrl": "https://github.com/jack-arturo/sunset-voyages",
+      "stats": {
+        "added": 2168,
+        "deleted": 0,
+        "files": 17
+      },
+      "files": [
+        {
+          "file": "landing",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "checkout",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "testimonials",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "responsive",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 7,
+          "deleted": 0
+        },
+        {
+          "file": "audio/sfx_Gentl_20250910_163358.mp3",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "audio/tts_Hello_20250910_175026.mp3",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "audio/tts_Hi_ev_20250910_175132.mp3",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "audio/tts_Hi_th_20250910_174941.mp3",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "audio/tts_Welco_20250910_163321.mp3",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "checkout.html",
+          "added": 963,
+          "deleted": 0
+        },
+        {
+          "file": "img/jennifer.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "img/robert.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "img/sarah.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "index.html",
+          "added": 1198,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "94b98dc7eb49bc188c5c195f5af36e315e742168",
+      "shortHash": "94b98dc",
+      "date": "2026-01-05T02:48:04+01:00",
+      "headline": "Add artisan workshop image to About page (with perfectly normal TV)",
+      "body": "",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 5,
+        "deleted": 0,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "about.html",
+          "added": 5,
+          "deleted": 0
+        },
+        {
+          "file": "images/artisan-workshop.png",
+          "added": 0,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "99974a596655ecb91916f384a0866344c339c7e1",
+      "shortHash": "99974a5",
+      "date": "2026-01-05T02:43:57+01:00",
+      "headline": "Enhance AutoMem scripts for robust JSON handling and error logging",
+      "body": "Updated capture-deployment.sh and capture-test-pattern.sh to utilize jq for JSON encoding, ensuring better error handling and memory record creation. Improved session-memory.sh to generate session context using jq, added timeout handling for session processing, and ensured temporary file cleanup. Enhanced queue-cleanup.sh with validation checks and logging for better error tracking. These changes aim to strengthen the reliability and maintainability of the AutoMem scripts.",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 262,
+        "deleted": 169,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "plugins/automem/scripts/capture-deployment.sh",
+          "added": 57,
+          "deleted": 53
+        },
+        {
+          "file": "plugins/automem/scripts/capture-test-pattern.sh",
+          "added": 54,
+          "deleted": 37
+        },
+        {
+          "file": "plugins/automem/scripts/queue-cleanup.sh",
+          "added": 32,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/session-memory.sh",
+          "added": 59,
+          "deleted": 67
+        },
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 28,
+          "deleted": 12
+        },
+        {
+          "file": "templates/claude-code/scripts/queue-cleanup.sh",
+          "added": 32,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "fb1e22527bbb75266456021170cc92b2f9380d70",
+      "shortHash": "fb1e225",
+      "date": "2026-01-05T02:42:36+01:00",
+      "headline": "fix: use args array for Windows compatibility in Claude Desktop config",
+      "body": "Windows can convert forward slashes to backslashes during config parsing,",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 4,
+        "deleted": 2,
+        "files": 7
+      },
+      "files": [
+        {
+          "file": "to",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "rejects.",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "args",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "by",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "README.md",
+          "added": 4,
+          "deleted": 2
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "f0b054af0a0462147a1b912d1d5f166829745558",
+      "shortHash": "f0b054a",
+      "date": "2026-01-05T02:26:13+01:00",
+      "headline": "refactor: preserve raw HTML in notes formatting",
+      "body": "Updated the FreeScoutAPI to preserve raw HTML in notes instead of escaping it. Adjusted the related test to reflect this change, ensuring that HTML content is correctly handled when sent to FreeScout.",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 5,
+        "deleted": 7,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 3,
+          "deleted": 4
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 2,
+          "deleted": 3
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "4b1090b46169d0df94510055a9f7edb2b1b822c0",
+      "shortHash": "4b1090b",
+      "date": "2026-01-05T02:16:38+01:00",
+      "headline": "Update MCP tools configuration and agent schemas",
+      "body": "Modified the MCP tools configuration to include a new agent_name field for better agent profiling. Updated the lastUpdated timestamp to reflect recent changes. Enhanced agent schemas by adding evaluation rubrics for automated testing and refining existing properties for clarity. Improved the WP Fusion Expert agent profile with a mandatory verification phase and structured configuration. Adjusted various agent profiles to ensure consistency and added detailed documentation for new features. Refactored code for better readability and maintainability.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 7197,
+        "deleted": 2039,
+        "files": 22
+      },
+      "files": [
+        {
+          "file": "OPEN-APPLICATION-IMPLEMENTATION.md",
+          "added": 335,
+          "deleted": 0
+        },
+        {
+          "file": "config/mcp-tools.json",
+          "added": 4065,
+          "deleted": 1590
+        },
+        {
+          "file": "docs/OPEN-APPLICATION-TOOL.md",
+          "added": 379,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/add-open-tools.js",
+          "added": 63,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/test-agent-scenarios.js",
+          "added": 377,
+          "deleted": 0
+        },
+        {
+          "file": "src/agents/agent-schema.js",
+          "added": 94,
+          "deleted": 23
+        },
+        {
+          "file": "src/agents/executor.js",
+          "added": 171,
+          "deleted": 74
+        },
+        {
+          "file": "src/agents/profiles/hub-developer.js",
+          "added": 75,
+          "deleted": 2
+        },
+        {
+          "file": "src/agents/profiles/qa-browser.js",
+          "added": 0,
+          "deleted": 1
+        },
+        {
+          "file": "src/agents/profiles/research-assistant.js",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "src/agents/profiles/wp-fusion-expert.js",
+          "added": 39,
+          "deleted": 1
+        },
+        {
+          "file": "src/agents/status-broadcaster.js",
+          "added": 115,
+          "deleted": 47
+        },
+        {
+          "file": "src/claude/server-tools/agent-delegation.js",
+          "added": 529,
+          "deleted": 224
+        },
+        {
+          "file": "src/services/mcp-client.js",
+          "added": 15,
+          "deleted": 6
+        },
+        {
+          "file": "src/services/mcp-executor.js",
+          "added": 246,
+          "deleted": 5
+        },
+        {
+          "file": "src/voice/voice-server.js",
+          "added": 53,
+          "deleted": 1
+        },
+        {
+          "file": "src/workflows/runner.js",
+          "added": 106,
+          "deleted": 3
+        },
+        {
+          "file": "test/agent-scenarios.json",
+          "added": 101,
+          "deleted": 0
+        },
+        {
+          "file": "test/open-tools.test.js",
+          "added": 185,
+          "deleted": 0
+        },
+        {
+          "file": "web/src/components/VoiceInput.jsx",
+          "added": 16,
+          "deleted": 3
+        },
+        {
+          "file": "workflows/daily/wpf-support-dashboard.md",
+          "added": 62,
+          "deleted": 57
+        },
+        {
+          "file": "workflows/on-demand/wpf-support-dashboard-agent-test.md",
+          "added": 169,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "60e243dbd6f76d501a59b95ce1e37204bc7f4490",
+      "shortHash": "60e243d",
+      "date": "2026-01-05T02:07:44+01:00",
+      "headline": "refactor: simplify status handling in FreeScoutAPI",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 14,
+        "deleted": 4,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 13,
+          "deleted": 0
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 1,
+          "deleted": 4
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "0d992d721184ca3a058b91c740094bf1c218add9",
+      "shortHash": "0d992d7",
+      "date": "2026-01-05T02:02:11+01:00",
+      "headline": "fix: harden hook scripts and queue cleanup",
+      "body": "",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 528,
+        "deleted": 696,
+        "files": 10
+      },
+      "files": [
+        {
+          "file": "plugins/automem/scripts/capture-build-result.sh",
+          "added": 36,
+          "deleted": 4
+        },
+        {
+          "file": "plugins/automem/scripts/capture-deployment.sh",
+          "added": 34,
+          "deleted": 4
+        },
+        {
+          "file": "plugins/automem/scripts/capture-test-pattern.sh",
+          "added": 34,
+          "deleted": 4
+        },
+        {
+          "file": "plugins/automem/scripts/process-session-memory.py",
+          "added": 21,
+          "deleted": 514
+        },
+        {
+          "file": "plugins/automem/scripts/queue-cleanup.sh",
+          "added": 133,
+          "deleted": 77
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-build-result.sh",
+          "added": 36,
+          "deleted": 4
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-deployment.sh",
+          "added": 34,
+          "deleted": 4
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-test-pattern.sh",
+          "added": 34,
+          "deleted": 4
+        },
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 33,
+          "deleted": 4
+        },
+        {
+          "file": "templates/claude-code/scripts/queue-cleanup.sh",
+          "added": 133,
+          "deleted": 77
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T01:52:00",
+      "headline": "Voice Workflow Evolution",
+      "tags": [
+        "voice"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "7e15521097fc56b604b887b1b345ac7dbeaacb9e",
+      "shortHash": "7e15521",
+      "date": "2026-01-05T01:35:56+01:00",
+      "headline": "fix: address coderabbit review feedback",
+      "body": "",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 253,
+        "deleted": 176,
+        "files": 15
+      },
+      "files": [
+        {
+          "file": "CLAUDE.md",
+          "added": 2,
+          "deleted": 1
+        },
+        {
+          "file": "package-lock.json",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "plugins/automem/scripts/capture-build-result.sh",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "plugins/automem/scripts/capture-deployment.sh",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "plugins/automem/scripts/capture-test-pattern.sh",
+          "added": 14,
+          "deleted": 8
+        },
+        {
+          "file": "plugins/automem/scripts/memory-filters.json",
+          "added": 9,
+          "deleted": 9
+        },
+        {
+          "file": "plugins/automem/scripts/process-session-memory.py",
+          "added": 75,
+          "deleted": 58
+        },
+        {
+          "file": "plugins/automem/scripts/queue-cleanup.sh",
+          "added": 2,
+          "deleted": 1
+        },
+        {
+          "file": "src/cli/claude-code.ts",
+          "added": 41,
+          "deleted": 13
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-build-result.sh",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-deployment.sh",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-test-pattern.sh",
+          "added": 14,
+          "deleted": 8
+        },
+        {
+          "file": "templates/claude-code/scripts/memory-filters.json",
+          "added": 9,
+          "deleted": 9
+        },
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 75,
+          "deleted": 58
+        },
+        {
+          "file": "templates/claude-code/scripts/queue-cleanup.sh",
+          "added": 2,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "97a750376dfb25fd876397f407bd8294630c68ab",
+      "shortHash": "97a7503",
+      "date": "2026-01-05T01:28:41+01:00",
+      "headline": "Add AI-generated before/after hero image showing TV transformation",
+      "body": "",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 1,
+        "deleted": 1,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "images/hero-before-after.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "index.html",
+          "added": 1,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "e9a954df517c5ca16ad97482167ccc56c302d49c",
+      "shortHash": "e9a954d",
+      "date": "2026-01-05T01:24:30+01:00",
+      "headline": "Escape HTML in notes to prevent raw HTML injection",
+      "body": "Added an escapeHtml method and updated note formatting to ensure raw HTML is escaped before sending to FreeScout. Added a test to verify that HTML in notes is properly escaped and not sent as raw HTML. Also improved input validation for relative date parsing.",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 32,
+        "deleted": 4,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 20,
+          "deleted": 0
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 12,
+          "deleted": 4
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "7f1b62a1e957fbe9cdf2ec0bf0f88325c440061c",
+      "shortHash": "7f1b62a",
+      "date": "2026-01-05T01:09:14+01:00",
+      "headline": "Add Cloudflare Pages Function for Stripe checkout",
+      "body": "",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 74,
+        "deleted": 0,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "functions/api/create-checkout-session.js",
+          "added": 74,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "1a991ecd1899d27ebe0f43d9fa1aecbac53eb1c7",
+      "shortHash": "1a991ec",
+      "date": "2026-01-05T01:06:02+01:00",
+      "headline": "Add Stripe publishable key for live checkout",
+      "body": "",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 1,
+        "deleted": 1,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "drops/week1-moroccan-covers.html",
+          "added": 1,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "5efb1496a6186bb66a99d6a9bc9ea188c7859829",
+      "shortHash": "5efb149",
+      "date": "2026-01-05T00:31:41+01:00",
+      "headline": "Update Prettier config and refactor markdownToHtml",
+      "body": "Changed Prettier settings to use 80 print width and avoid arrow parens. Refactored markdownToHtml method in freescout-api.ts to use a single line for HTML escaping.",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 25,
+        "deleted": 16,
+        "files": 3
+      },
+      "files": [
+        {
+          "file": ".prettierrc",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 22,
+          "deleted": 10
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 1,
+          "deleted": 4
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "date": "2026-01-05T00:22:00",
+      "headline": "Cloudflare/Stripe Decisions",
+      "tags": [
+        "decision"
+      ],
+      "repo": "memory"
+    },
+    {
+      "type": "commit",
+      "hash": "1e0a649376f377cdc54e2f50bc4813d64ae0382a",
+      "shortHash": "1e0a649",
+      "date": "2026-01-04T23:55:41+01:00",
+      "headline": "Initial commit: Haven artisan e-commerce site",
+      "body": "Static site for luxury artisan home goods with weekly drops.",
+      "repo": "haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven",
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "stats": {
+        "added": 4709,
+        "deleted": 0,
+        "files": 38
+      },
+      "files": [
+        {
+          "file": "Worker",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 5,
+          "deleted": 0
+        },
+        {
+          "file": "6-WEEK-CONTENT-CALENDAR.md",
+          "added": 291,
+          "deleted": 0
+        },
+        {
+          "file": "DEPLOYMENT.md",
+          "added": 349,
+          "deleted": 0
+        },
+        {
+          "file": "ETSY_GUIDE.md",
+          "added": 635,
+          "deleted": 0
+        },
+        {
+          "file": "PRODUCT_MOCKUPS.md",
+          "added": 282,
+          "deleted": 0
+        },
+        {
+          "file": "README.md",
+          "added": 292,
+          "deleted": 0
+        },
+        {
+          "file": "STRIPE_SETUP.md",
+          "added": 146,
+          "deleted": 0
+        },
+        {
+          "file": "about.html",
+          "added": 118,
+          "deleted": 0
+        },
+        {
+          "file": "app.js",
+          "added": 273,
+          "deleted": 0
+        },
+        {
+          "file": "cart.html",
+          "added": 72,
+          "deleted": 0
+        },
+        {
+          "file": "drops.html",
+          "added": 138,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week1-moroccan-covers.html",
+          "added": 240,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week2-throw-pillows.html",
+          "added": 107,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week3-airpods-cases.html",
+          "added": 101,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week4-cat-sweaters.html",
+          "added": 77,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week5-christmas-hats.html",
+          "added": 98,
+          "deleted": 0
+        },
+        {
+          "file": "drops/week6-soundbar-covers.html",
+          "added": 101,
+          "deleted": 0
+        },
+        {
+          "file": "email-templates.md",
+          "added": 138,
+          "deleted": 0
+        },
+        {
+          "file": "functions/checkout.js",
+          "added": 98,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/berber-tribal-textile.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/cat-sweater-bohemian.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/handwoven-beni-ourain.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/handwoven-indigo-kilim.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/moroccan-style-terracotta.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/moroccan-throw-pillows.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/palestinian-airpods-case.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/soundbar-cover-set.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "images/products/welsh-christmas-hat.jpg",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "index.html",
+          "added": 73,
+          "deleted": 0
+        },
+        {
+          "file": "notify.html",
+          "added": 67,
+          "deleted": 0
+        },
+        {
+          "file": "product.html",
+          "added": 92,
+          "deleted": 0
+        },
+        {
+          "file": "script.js",
+          "added": 76,
+          "deleted": 0
+        },
+        {
+          "file": "styles.css",
+          "added": 575,
+          "deleted": 0
+        },
+        {
+          "file": "success.html",
+          "added": 67,
+          "deleted": 0
+        },
+        {
+          "file": "worker.js",
+          "added": 177,
+          "deleted": 0
+        },
+        {
+          "file": "wrangler.toml",
+          "added": 21,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "279f5f0ec5bfef968041e212c4a60f58c79a288c",
+      "shortHash": "279f5f0",
+      "date": "2026-01-04T23:55:32+01:00",
+      "headline": "Improve message formatting and heading detection",
+      "body": "Enhanced MessageFormatter to better normalize markdown structure, detect and promote headings, and handle bold markers. Added a lightweight formatter for the watch app, updated MarkdownMessageView to support bold headings, and ensured consistent formatting in WatchConversationView.",
+      "repo": "autoapp",
+      "owner": "verygoodplugins",
+      "repoSlug": "AutoApp",
+      "remoteUrl": "https://github.com/verygoodplugins/AutoApp",
+      "stats": {
+        "added": 558,
+        "deleted": 7,
+        "files": 4
+      },
+      "files": [
+        {
+          "file": "AutoHub/Utilities/MessageFormatter.swift",
+          "added": 204,
+          "deleted": 4
+        },
+        {
+          "file": "AutoHub/Views/MarkdownMessageView.swift",
+          "added": 11,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHubWatch",
+          "added": 340,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHubWatch",
+          "added": 3,
+          "deleted": 2
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "68415a63e55b3151730e68c3fd5e14ff6d699466",
+      "shortHash": "68415a6",
+      "date": "2026-01-04T23:12:18+01:00",
+      "headline": "fix: format markdown notes as FreeScout HTML",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 54,
+        "deleted": 7,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 21,
+          "deleted": 0
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 33,
+          "deleted": 7
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "8fa6db2b93d076c42f7596409ab34fd36e73dde1",
+      "shortHash": "8fa6db2",
+      "date": "2026-01-04T22:46:36+01:00",
+      "headline": "Replace FloppyMascot with AutoJackIcon and update icons",
+      "body": "Replaces all usages of the FloppyMascot, SassyAutoJackIcon, and CrazyAutoJackIcon components with the new AutoJackIcon component throughout the app. Removes the old mascot icon files and adds ModernAutoJackIcon. Updates app icon assets and design handoff resources. Refactors related views and components to use the new icon API and expressions, and adds debug logging to WatchRelayHandler. Also updates WatchConversationView to support expandable thinking ribbons.",
+      "repo": "autoapp",
+      "owner": "verygoodplugins",
+      "repoSlug": "AutoApp",
+      "remoteUrl": "https://github.com/verygoodplugins/AutoApp",
+      "stats": {
+        "added": 617,
+        "deleted": 767,
+        "files": 51
+      },
+      "files": [
+        {
+          "file": "AutoHub/AdaptiveContentView.swift",
+          "added": 3,
+          "deleted": 3
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-20@1x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-20@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-20@3x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-29@1x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-40@1x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-76@1x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Components/CrazyAutoJackIcon.swift",
+          "added": 0,
+          "deleted": 157
+        },
+        {
+          "file": "AutoHub/Components/FloppyMascot.swift",
+          "added": 0,
+          "deleted": 342
+        },
+        {
+          "file": "AutoHub/Components/ModernAutoJackIcon.swift",
+          "added": 65,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHub/Components/OrchestratorFAB.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Components/SassyAutoJackIcon.swift",
+          "added": 0,
+          "deleted": 142
+        },
+        {
+          "file": "AutoHub/ContentView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Services/WatchRelayHandler.swift",
+          "added": 3,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/AgentsView.swift",
+          "added": 3,
+          "deleted": 3
+        },
+        {
+          "file": "AutoHub/Views/AppIconGenerator.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/DashboardView.swift",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "AutoHub/Views/EnhancedDashboardView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/OrchestratorChatView.swift",
+          "added": 4,
+          "deleted": 4
+        },
+        {
+          "file": "AutoHub/Views/SessionHistoryView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/SessionsView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/SettingsView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/UsageView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHub/Views/WorkflowExecutionView.swift",
+          "added": 3,
+          "deleted": 3
+        },
+        {
+          "file": "AutoHub/Views/WorkflowsView.swift",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "AutoHubWatch",
+          "added": 2,
+          "deleted": 0
+        },
+        {
+          "file": "AutoHubWatch",
+          "added": 202,
+          "deleted": 76
+        },
+        {
+          "file": "design-handoff/app-icons/ios-app-icon-1024.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-angry.svg",
+          "added": 18,
+          "deleted": 2
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-cool.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-cool.svg",
+          "added": 18,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-happy.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-love.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-party.svg",
+          "added": 18,
+          "deleted": 2
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-sleepy.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-thinking.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot-wink.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/minimal-bot.svg",
+          "added": 19,
+          "deleted": 3
+        },
+        {
+          "file": "design-handoff/app-icons/slack-bot-icon-512.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "design-handoff/app-icons/watchos-app-icon-1024.png",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/generate_app_icons.py",
+          "added": 94,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/update_icons.py",
+          "added": 59,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "4523d98f417da0c6151c4bd0b76e1ea5cc9c948d",
+      "shortHash": "4523d98",
+      "date": "2026-01-04T22:23:36+01:00",
+      "headline": "test: restore Jest suite and remove node-fetch",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 5307,
+        "deleted": 3766,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "jest.config.cjs",
+          "added": 0,
+          "deleted": 6
+        },
+        {
+          "file": "package-lock.json",
+          "added": 4876,
+          "deleted": 3738
+        },
+        {
+          "file": "package.json",
+          "added": 2,
+          "deleted": 5
+        },
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 393,
+          "deleted": 0
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 31,
+          "deleted": 16
+        },
+        {
+          "file": "src/index.ts",
+          "added": 5,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "f845548a000428cbb1b4dd80f21aaf9d39c3798a",
+      "shortHash": "f845548",
+      "date": "2026-01-04T22:09:57+01:00",
+      "headline": "Refactor agent memory storage and workflow dispatch",
+      "body": "Agent profiles and schema now disable automatic memory storage (storeResults: false); agents must explicitly store significant findings. Updated agent instructions clarify what should and should not be stored. The status broadcaster no longer auto-saves results or TODOs to memory. Workflow runner and executor now support agent steps, skip_if_empty logic, and improved tool/agent argument handling. The WP Fusion Support Dashboard workflow now dispatches a sub-agent for ticket investigation and posts a concise summary, removing memory storage of routine snapshots. Added a dry-run investigation workflow for on-demand testing. Various code and documentation improvements for clarity and maintainability.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 580,
+        "deleted": 252,
+        "files": 18
+      },
+      "files": [
+        {
+          "file": "scripts/run-workflow-cli.js",
+          "added": 32,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/swarm-worker.js",
+          "added": 3,
+          "deleted": 2
+        },
+        {
+          "file": "src/agents/agent-schema.js",
+          "added": 5,
+          "deleted": 4
+        },
+        {
+          "file": "src/agents/executor.js",
+          "added": 22,
+          "deleted": 5
+        },
+        {
+          "file": "src/agents/profiles/hub-developer.js",
+          "added": 14,
+          "deleted": 4
+        },
+        {
+          "file": "src/agents/profiles/qa-browser.js",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "src/agents/profiles/research-assistant.js",
+          "added": 17,
+          "deleted": 3
+        },
+        {
+          "file": "src/agents/profiles/wordpress-specialist.js",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "src/agents/profiles/wp-fusion-expert.js",
+          "added": 3,
+          "deleted": 3
+        },
+        {
+          "file": "src/agents/status-broadcaster.js",
+          "added": 3,
+          "deleted": 39
+        },
+        {
+          "file": "src/scheduler/workflow-scheduler.js",
+          "added": 4,
+          "deleted": 1
+        },
+        {
+          "file": "src/workflows/runner.js",
+          "added": 144,
+          "deleted": 0
+        },
+        {
+          "file": "src/workflows/workflow-executor.js",
+          "added": 6,
+          "deleted": 1
+        },
+        {
+          "file": "tools/run-workflow.js",
+          "added": 107,
+          "deleted": 39
+        },
+        {
+          "file": "tools/swarm-dispatch.js",
+          "added": 17,
+          "deleted": 3
+        },
+        {
+          "file": "workflows/daily/morning-routine.md",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "workflows/daily/wpf-support-dashboard.md",
+          "added": 128,
+          "deleted": 144
+        },
+        {
+          "file": "workflows/on-demand/wpf-ticket-investigation-dry-run.md",
+          "added": 70,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "c743a2203e9394c6a440645d992da22cb24812dd",
+      "shortHash": "c743a22",
+      "date": "2026-01-04T20:25:41+01:00",
+      "headline": "chore: add --passWithNoTests to test script",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 1,
+        "deleted": 1,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "134cae5d06b7da590cc712e46c9e6454e84acec9",
+      "shortHash": "134cae5",
+      "date": "2026-01-04T20:19:26+01:00",
+      "headline": "chore: temporarily remove tests (Jest v30 ESM compatibility issues) - server manually validated",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 0,
+        "deleted": 902,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 0,
+          "deleted": 377
+        },
+        {
+          "file": "src/__tests__/mcp-server.test.ts",
+          "added": 0,
+          "deleted": 525
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "ef725f7f87ef1e5bb9b52556d9cd548e9a5275fd",
+      "shortHash": "ef725f7",
+      "date": "2026-01-04T20:07:06+01:00",
+      "headline": "fix: restore @types/jest and update Jest config for v30",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 388,
+        "deleted": 10,
+        "files": 3
+      },
+      "files": [
+        {
+          "file": "jest.config.cjs",
+          "added": 4,
+          "deleted": 1
+        },
+        {
+          "file": "package-lock.json",
+          "added": 382,
+          "deleted": 9
+        },
+        {
+          "file": "package.json",
+          "added": 2,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "fee9920f5c054c0eac1d9a899367b46c5d9f149f",
+      "shortHash": "fee9920",
+      "date": "2026-01-04T19:56:35+01:00",
+      "headline": "chore: update lock file after dependency changes",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 2,
+        "deleted": 13,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "package-lock.json",
+          "added": 2,
+          "deleted": 13
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "a7c455be1d4d47cc74429702e67a4bf17b4cf870",
+      "shortHash": "a7c455b",
+      "date": "2026-01-04T19:56:16+01:00",
+      "headline": "chore: bump version to 2.0.0",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 1,
+        "deleted": 1,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "b9428390e140efcb27e486892f4bc5de77928403",
+      "shortHash": "b942839",
+      "date": "2026-01-04T19:52:34+01:00",
+      "headline": "fix: resolve lint errors in test files",
+      "body": "",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 4,
+        "deleted": 3,
+        "files": 1
+      },
+      "files": [
+        {
+          "file": "src/__tests__/mcp-server.test.ts",
+          "added": 4,
+          "deleted": 3
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "05b926fd372e2369b3d03063b43cdefc5f5d4b1b",
+      "shortHash": "05b926f",
+      "date": "2026-01-04T19:04:12+01:00",
+      "headline": "Clean up formatting and update descriptions",
+      "body": "Removed outdated Git workflow section from README and improved the description in server.json for clarity. Also cleaned up trailing whitespace and formatting in Jest config, setup, and test files for consistency.",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 27,
+        "deleted": 37,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "README.md",
+          "added": 0,
+          "deleted": 6
+        },
+        {
+          "file": "jest.config.cjs",
+          "added": 0,
+          "deleted": 1
+        },
+        {
+          "file": "jest.setup.cjs",
+          "added": 0,
+          "deleted": 1
+        },
+        {
+          "file": "server.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 9,
+          "deleted": 11
+        },
+        {
+          "file": "src/__tests__/mcp-server.test.ts",
+          "added": 17,
+          "deleted": 17
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "d8ef1f468465846580ed249cf20edf8f17ec08de",
+      "shortHash": "d8ef1f4",
+      "date": "2026-01-04T18:58:30+01:00",
+      "headline": "Refactor automem scripts for safer JSON and session handling",
+      "body": "Replaces shell-based JSON record creation in build, deployment, and test scripts with Python for robust encoding and file locking. Improves session-memory.sh to use environment variables and Python for context generation, adds timeout handling for session processing, and ensures temp file cleanup. Updates process-session-memory.py for UTC timestamps, improved duplicate detection, and more granular significance tagging. Minor fixes in queue.ts for fetch timeout, and adds 'set -o pipefail' to queue-cleanup.sh for better error handling.",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 531,
+        "deleted": 269,
+        "files": 13
+      },
+      "files": [
+        {
+          "file": "plugins/automem/scripts/capture-build-result.sh",
+          "added": 53,
+          "deleted": 23
+        },
+        {
+          "file": "plugins/automem/scripts/capture-deployment.sh",
+          "added": 64,
+          "deleted": 25
+        },
+        {
+          "file": "plugins/automem/scripts/capture-test-pattern.sh",
+          "added": 48,
+          "deleted": 21
+        },
+        {
+          "file": "plugins/automem/scripts/process-session-memory.py",
+          "added": 29,
+          "deleted": 20
+        },
+        {
+          "file": "plugins/automem/scripts/queue-cleanup.sh",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/session-memory.sh",
+          "added": 68,
+          "deleted": 45
+        },
+        {
+          "file": "src/cli/queue.ts",
+          "added": 5,
+          "deleted": 1
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-build-result.sh",
+          "added": 53,
+          "deleted": 23
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-deployment.sh",
+          "added": 64,
+          "deleted": 25
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-test-pattern.sh",
+          "added": 48,
+          "deleted": 21
+        },
+        {
+          "file": "templates/claude-code/hooks/session-memory.sh",
+          "added": 68,
+          "deleted": 45
+        },
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 29,
+          "deleted": 20
+        },
+        {
+          "file": "templates/claude-code/scripts/queue-cleanup.sh",
+          "added": 1,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "dc0b649f6384eb3b778360d193726d29e8ca6cc2",
+      "shortHash": "dc0b649",
+      "date": "2026-01-04T18:35:48+01:00",
+      "headline": "Release v2.0: API redesign, type safety, and testing",
+      "body": "Major update with breaking changes: FreeScout search API now uses explicit filter parameters instead of query-string syntax, and Git/GitHub tools have been removed. Migrated to MCP SDK 1.25+ with modern McpServer and registerTool() patterns, added Zod schema validation, structured outputs, exponential backoff retry logic, and improved reliability. Includes new test suite, Jest config, and documentation updates for v2.0 features and migration guidance.",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 3460,
+        "deleted": 1283,
+        "files": 20
+      },
+      "files": [
+        {
+          "file": ".github/workflows/release-please.yml",
+          "added": 22,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": ".prettierignore",
+          "added": 24,
+          "deleted": 0
+        },
+        {
+          "file": ".prettierrc",
+          "added": 10,
+          "deleted": 0
+        },
+        {
+          "file": "AGENTS.md",
+          "added": 6,
+          "deleted": 0
+        },
+        {
+          "file": "CHANGELOG.md",
+          "added": 84,
+          "deleted": 0
+        },
+        {
+          "file": "CLAUDE.md",
+          "added": 6,
+          "deleted": 0
+        },
+        {
+          "file": "README.md",
+          "added": 175,
+          "deleted": 162
+        },
+        {
+          "file": "TESTING.md",
+          "added": 98,
+          "deleted": 0
+        },
+        {
+          "file": "jest.config.cjs",
+          "added": 48,
+          "deleted": 0
+        },
+        {
+          "file": "jest.setup.cjs",
+          "added": 49,
+          "deleted": 0
+        },
+        {
+          "file": "package-lock.json",
+          "added": 1292,
+          "deleted": 20
+        },
+        {
+          "file": "package.json",
+          "added": 13,
+          "deleted": 3
+        },
+        {
+          "file": "server.json",
+          "added": 53,
+          "deleted": 21
+        },
+        {
+          "file": "src/__tests__/freescout-api.test.ts",
+          "added": 379,
+          "deleted": 0
+        },
+        {
+          "file": "src/__tests__/mcp-server.test.ts",
+          "added": 524,
+          "deleted": 0
+        },
+        {
+          "file": "src/freescout-api.ts",
+          "added": 225,
+          "deleted": 88
+        },
+        {
+          "file": "src/index.ts",
+          "added": 279,
+          "deleted": 847
+        },
+        {
+          "file": "src/ticket-analyzer.ts",
+          "added": 64,
+          "deleted": 67
+        },
+        {
+          "file": "src/types.ts",
+          "added": 108,
+          "deleted": 75
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "775fe684e77906d4f2293cec6c16d779d7970b02",
+      "shortHash": "775fe68",
+      "date": "2026-01-04T18:27:15+01:00",
+      "headline": "Add AutoMem session and event capture scripts",
+      "body": "Introduces new scripts and hooks for capturing build results, test patterns, deployments, and session milestones for AutoMem. Updates hooks.json to trigger these scripts on relevant events, adds memory filtering and deduplication logic, and enhances the CLI setup to install and merge these hooks and support scripts. Also updates server.json metadata and settings for improved integration.",
+      "repo": "mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 2738,
+        "deleted": 36,
+        "files": 20
+      },
+      "files": [
+        {
+          "file": "plugins/automem/hooks/hooks.json",
+          "added": 48,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/capture-build-result.sh",
+          "added": 140,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/capture-deployment.sh",
+          "added": 155,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/capture-test-pattern.sh",
+          "added": 111,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/memory-filters.json",
+          "added": 129,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/process-session-memory.py",
+          "added": 503,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/queue-cleanup.sh",
+          "added": 84,
+          "deleted": 0
+        },
+        {
+          "file": "plugins/automem/scripts/session-memory.sh",
+          "added": 132,
+          "deleted": 0
+        },
+        {
+          "file": "server.json",
+          "added": 11,
+          "deleted": 10
+        },
+        {
+          "file": "src/cli/claude-code.ts",
+          "added": 65,
+          "deleted": 24
+        },
+        {
+          "file": "src/cli/queue.ts",
+          "added": 57,
+          "deleted": 2
+        },
+        {
+          "file": "templates/claude-code/hooks/automem-session-start.sh",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-build-result.sh",
+          "added": 140,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-deployment.sh",
+          "added": 155,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/hooks/capture-test-pattern.sh",
+          "added": 111,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/hooks/session-memory.sh",
+          "added": 132,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/scripts/memory-filters.json",
+          "added": 129,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/scripts/process-session-memory.py",
+          "added": 503,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/scripts/queue-cleanup.sh",
+          "added": 84,
+          "deleted": 0
+        },
+        {
+          "file": "templates/claude-code/settings.json",
+          "added": 49,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "d7c8b221c3eb0d12bcc091063e37da3f2bba777d",
+      "shortHash": "d7c8b22",
+      "date": "2026-01-04T17:34:30+01:00",
+      "headline": "Enhance workflow notifications and support dashboard",
+      "body": "Improves per-workflow Slack notification controls, adds opt-in debug thread replies, and ensures MCP child processes are cleaned up in the CLI. Refines the WP Fusion Support Dashboard workflow to use explicit Slack notifications, updates its execution mode, and provides a more detailed, step-based summary and memory storage. Also improves error handling and assignment in workflow runner, and enhances MCP client process pattern matching.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 291,
+        "deleted": 180,
+        "files": 8
+      },
+      "files": [
+        {
+          "file": "scripts/run-workflow-cli.js",
+          "added": 13,
+          "deleted": 3
+        },
+        {
+          "file": "src/scheduler/workflow-scheduler.js",
+          "added": 26,
+          "deleted": 11
+        },
+        {
+          "file": "src/services/mcp-client.js",
+          "added": 34,
+          "deleted": 1
+        },
+        {
+          "file": "src/slack-server/config/team-config.js",
+          "added": 18,
+          "deleted": 1
+        },
+        {
+          "file": "src/workflows/runner.js",
+          "added": 26,
+          "deleted": 2
+        },
+        {
+          "file": "workflows/daily/WPF-DASHBOARD-CHANGES.md",
+          "added": 0,
+          "deleted": 132
+        },
+        {
+          "file": "workflows/daily/daily-context-review.md",
+          "added": 2,
+          "deleted": 0
+        },
+        {
+          "file": "workflows/daily/wpf-support-dashboard.md",
+          "added": 172,
+          "deleted": 30
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "a0c6310ed8e248c3d265ca06541740ffc6dcb611",
+      "shortHash": "a0c6310",
+      "date": "2026-01-04T16:52:27+01:00",
+      "headline": "feat: update MCP Registry standards to 2025-12-11 schema",
+      "body": "- Update server.json schema from 2025-07-09 to 2025-12-11",
+      "repo": "mcp-ecosystem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-ecosystem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-ecosystem",
+      "stats": {
+        "added": 136,
+        "deleted": 17,
+        "files": 13
+      },
+      "files": [
+        {
+          "file": "correct",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "mcp-publisher",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "server.json",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "mcp-local-wp",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "PUBLISHING.md",
+          "added": 48,
+          "deleted": 11
+        },
+        {
+          "file": "STANDARDS.md",
+          "added": 30,
+          "deleted": 5
+        },
+        {
+          "file": "server-inventory.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "templates/python/server.json.template",
+          "added": 28,
+          "deleted": 0
+        },
+        {
+          "file": "templates/typescript/server.json.template",
+          "added": 28,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "7049bdfe734595c22bf24a4149bf5f937d44af2a",
+      "shortHash": "7049bdf",
+      "date": "2026-01-04T15:59:12+01:00",
+      "headline": "chore: override release version",
+      "body": "Release-As: 1.1.0",
+      "repo": "mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 0,
+        "deleted": 0,
+        "files": 0
+      },
+      "files": []
+    },
+    {
+      "type": "commit",
+      "hash": "61086109bab0cf97e478686ec5d053e4956a9291",
+      "shortHash": "6108610",
+      "date": "2026-01-04T15:47:56+01:00",
+      "headline": "Bump version to 1.1.0",
+      "body": "Update version numbers in package-lock.json and server.json from 1.0.1 to 1.1.0 to reflect a new release.",
+      "repo": "mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 20,
+        "deleted": 12,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "package-lock.json",
+          "added": 10,
+          "deleted": 10
+        },
+        {
+          "file": "server.json",
+          "added": 10,
+          "deleted": 2
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "7e143a695ffd0f0f0516ddf1dbfb69e713ad35e3",
+      "shortHash": "7e143a6",
+      "date": "2026-01-04T15:46:13+01:00",
+      "headline": "Return detection method in findActiveLocalSocket",
+      "body": "The findActiveLocalSocket function now returns both the detected site info and the method used ('process_detection' or 'filesystem_fallback'). The selectSite function is updated to use this detection method for more accurate reporting. Also improves error handling for unknown error types.",
+      "repo": "mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 21,
+        "deleted": 12,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "src/local-detector.ts",
+          "added": 20,
+          "deleted": 11
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "da0d557da19e370a1194ab6706cf2f4a6dc660a3",
+      "shortHash": "da0d557",
+      "date": "2026-01-04T15:38:31+01:00",
+      "headline": "fix: allow test script to pass with no tests",
+      "body": "Jest exits with code 1 when no tests are found. Added --passWithNoTests",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 1,
+        "deleted": 1,
+        "files": 4
+      },
+      "files": [
+        {
+          "file": "proper",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "d1b5a5ce13ce40249f7db0fbbdf0f1651bd772da",
+      "shortHash": "d1b5a5c",
+      "date": "2026-01-04T15:36:41+01:00",
+      "headline": "feat: add ESLint 9 flat config template",
+      "body": "- Add eslint.config.mjs template for TypeScript servers",
+      "repo": "mcp-ecosystem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-ecosystem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-ecosystem",
+      "stats": {
+        "added": 24,
+        "deleted": 0,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "ESLint",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "underscore-prefixed",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "on",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "templates/typescript/eslint.config.mjs",
+          "added": 24,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "4adc500cb89173e46481b91330e02f301feb953a",
+      "shortHash": "4adc500",
+      "date": "2026-01-04T15:36:25+01:00",
+      "headline": "feat: add ESLint 9 flat config with typescript-eslint 8",
+      "body": "- Add eslint.config.mjs (flat config for ESLint 9+)",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 873,
+        "deleted": 972,
+        "files": 9
+      },
+      "files": [
+        {
+          "file": "devDependencies",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "lint",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "for",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "eslint.config.mjs",
+          "added": 24,
+          "deleted": 0
+        },
+        {
+          "file": "package-lock.json",
+          "added": 836,
+          "deleted": 956
+        },
+        {
+          "file": "package.json",
+          "added": 5,
+          "deleted": 5
+        },
+        {
+          "file": "src/index.ts",
+          "added": 8,
+          "deleted": 11
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "ca52e0b1e83123d49febaf4af736ebbd8752ea64",
+      "shortHash": "ca52e0b",
+      "date": "2026-01-04T15:25:55+01:00",
+      "headline": "Add multi-site support and site selection tools",
+      "body": "Implements priority-based site selection for Local by Flywheel sites using SITE_ID, SITE_NAME, working directory, process, or filesystem fallback. Adds new tools: mysql_current_site (shows current site and selection method) and mysql_list_sites (lists all available sites and their status). Updates documentation, improves error messages, enhances startup logging, and introduces write operation support (mysql_write) gated by MYSQL_ALLOW_WRITES. Updates dependencies and refactors types and local site detection logic.",
+      "repo": "mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 678,
+        "deleted": 8,
+        "files": 7
+      },
+      "files": [
+        {
+          "file": "CHANGELOG.md",
+          "added": 33,
+          "deleted": 0
+        },
+        {
+          "file": "README.md",
+          "added": 108,
+          "deleted": 0
+        },
+        {
+          "file": "package.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "src/index.ts",
+          "added": 156,
+          "deleted": 3
+        },
+        {
+          "file": "src/local-detector.ts",
+          "added": 272,
+          "deleted": 3
+        },
+        {
+          "file": "src/mysql-client.ts",
+          "added": 62,
+          "deleted": 1
+        },
+        {
+          "file": "src/types.ts",
+          "added": 46,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "f45235221fa745f0fd7fbb7c694083386f970968",
+      "shortHash": "f452352",
+      "date": "2026-01-04T15:25:37+01:00",
+      "headline": "feat: enhance audit script and update CodeQL to v4",
+      "body": "- Add package-lock.json check (required for npm ci in CI)",
+      "repo": "mcp-ecosystem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-ecosystem",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-ecosystem",
+      "stats": {
+        "added": 125,
+        "deleted": 22,
+        "files": 10
+      },
+      "files": [
+        {
+          "file": "CodeQL",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "security.yml",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "server-inventory.json",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "TypeScript",
+          "added": 0,
+          "deleted": 6
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "CLAUDE.md",
+          "added": 86,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/audit-server.sh",
+          "added": 23,
+          "deleted": 0
+        },
+        {
+          "file": "server-inventory.json",
+          "added": 13,
+          "deleted": 13
+        },
+        {
+          "file": "templates/typescript/.github/workflows/security.yml",
+          "added": 3,
+          "deleted": 3
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "8500a42eace2d9df4cc3159fd03d92fca83eff8c",
+      "shortHash": "8500a42",
+      "date": "2026-01-04T15:25:15+01:00",
+      "headline": "chore: add CLAUDE.md for Claude Code guidance",
+      "body": "🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+      "repo": "mcp-toggl",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-toggl",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-toggl",
+      "stats": {
+        "added": 65,
+        "deleted": 0,
+        "files": 2
+      },
+      "files": [
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "CLAUDE.md",
+          "added": 65,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "78b99228b8faa80d1891745901208633818b124c",
+      "shortHash": "78b9922",
+      "date": "2026-01-04T15:25:04+01:00",
+      "headline": "fix: add package-lock.json and update CodeQL to v4",
+      "body": "- Remove package-lock.json from .gitignore (required for npm ci)",
+      "repo": "mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 6358,
+        "deleted": 5,
+        "files": 6
+      },
+      "files": [
+        {
+          "file": "CodeQL",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".github/workflows/security.yml",
+          "added": 3,
+          "deleted": 3
+        },
+        {
+          "file": ".gitignore",
+          "added": 2,
+          "deleted": 2
+        },
+        {
+          "file": "package-lock.json",
+          "added": 6353,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "278e46e0b5f85eefeb42d001151257ebfe2f6f5e",
+      "shortHash": "278e46e",
+      "date": "2026-01-04T15:05:22+01:00",
+      "headline": "Add single instance lock to scheduler script",
+      "body": "Updated scripts/start-scheduler.js to ensure only one instance runs at a time using a lock file. The script now checks for an existing lock, verifies if the process is running, and cleans up the lock on exit or termination. Also updated reset-all.sh to include the scheduler script in its patterns.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 63,
+        "deleted": 0,
+        "files": 4
+      },
+      "files": [
+        {
+          "file": "scripts/reset-all.sh",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/start-scheduler.js",
+          "added": 60,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/test-flight-search.js",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "src/claude/tools/memory-recall-tool.js",
+          "added": 1,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "378c7fbd53c68a69d6836a078b38f32ad067424b",
+      "shortHash": "378c7fb",
+      "date": "2026-01-04T14:23:07+01:00",
+      "headline": "Initial project setup and source import",
+      "body": "Add initial project files including environment example, license, README, .gitignore, main source code, scripts, example client, and test. Sets up a local uncensored voice server using Ollama, Whisper, and ElevenLabs, with support for personalities, boundary testing, and REST API endpoints.",
+      "repo": "uncensored-voice-server",
+      "owner": "verygoodplugins",
+      "repoSlug": "uncensored-voice-server",
+      "remoteUrl": "https://github.com/verygoodplugins/uncensored-voice-server",
+      "stats": {
+        "added": 7167,
+        "deleted": 0,
+        "files": 21
+      },
+      "files": [
+        {
+          "file": ".env.example",
+          "added": 60,
+          "deleted": 0
+        },
+        {
+          "file": ".gitignore",
+          "added": 28,
+          "deleted": 0
+        },
+        {
+          "file": "LICENSE",
+          "added": 21,
+          "deleted": 0
+        },
+        {
+          "file": "README.md",
+          "added": 664,
+          "deleted": 0
+        },
+        {
+          "file": "examples/client.js",
+          "added": 98,
+          "deleted": 0
+        },
+        {
+          "file": "package-lock.json",
+          "added": 2722,
+          "deleted": 0
+        },
+        {
+          "file": "package.json",
+          "added": 36,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/kill-port.sh",
+          "added": 27,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/run-boundary-tests.js",
+          "added": 46,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/start-server.js",
+          "added": 29,
+          "deleted": 0
+        },
+        {
+          "file": "scripts/voice-client.js",
+          "added": 600,
+          "deleted": 0
+        },
+        {
+          "file": "src/boundary-tests.js",
+          "added": 515,
+          "deleted": 0
+        },
+        {
+          "file": "src/config.js",
+          "added": 138,
+          "deleted": 0
+        },
+        {
+          "file": "src/index.js",
+          "added": 14,
+          "deleted": 0
+        },
+        {
+          "file": "src/ollama-client.js",
+          "added": 259,
+          "deleted": 0
+        },
+        {
+          "file": "src/personality.js",
+          "added": 226,
+          "deleted": 0
+        },
+        {
+          "file": "src/proof-of-uncensored.js",
+          "added": 318,
+          "deleted": 0
+        },
+        {
+          "file": "src/server.js",
+          "added": 476,
+          "deleted": 0
+        },
+        {
+          "file": "src/session-manager.js",
+          "added": 279,
+          "deleted": 0
+        },
+        {
+          "file": "src/voice-io.js",
+          "added": 402,
+          "deleted": 0
+        },
+        {
+          "file": "test/server.test.js",
+          "added": 209,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "9a2edf9d25cfd2e37f741136fd3a725e7360b1e6",
+      "shortHash": "9a2edf9",
+      "date": "2026-01-04T13:23:51+01:00",
+      "headline": "feat: upgrade to ESLint 9 flat config and update all dependencies",
+      "body": "- Migrate from ESLint 8 (.eslintrc.cjs) to ESLint 9 (eslint.config.js)",
+      "repo": "mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp",
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 518,
+        "deleted": 2308,
+        "files": 17
+      },
+      "files": [
+        {
+          "file": "MCP",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "dotenv",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "TypeScript",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "@typescript-eslint/*",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "eslint-plugin-unused-imports",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "prettier",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "npm",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "copyright",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Requires",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "with",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": "Opus",
+          "added": 0,
+          "deleted": 0
+        },
+        {
+          "file": ".eslintignore",
+          "added": 0,
+          "deleted": 3
+        },
+        {
+          "file": ".eslintrc.cjs",
+          "added": 0,
+          "deleted": 44
+        },
+        {
+          "file": "LICENSE",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "eslint.config.js",
+          "added": 45,
+          "deleted": 0
+        },
+        {
+          "file": "package-lock.json",
+          "added": 461,
+          "deleted": 2251
+        },
+        {
+          "file": "package.json",
+          "added": 11,
+          "deleted": 9
+        }
+      ]
+    },
+    {
+      "type": "commit",
+      "hash": "f76e2bbf746c5b33804f9e2d4da9ad8d5853ffc6",
+      "shortHash": "f76e2bb",
+      "date": "2026-01-04T10:46:35+01:00",
+      "headline": "Enhance WhatsApp context and stagger service startup",
+      "body": "Adds a 'whatsapp-owner' tool filter profile and updates WhatsApp config to use it. Improves WhatsApp adapter to always provide contact info, enriches platform context for Claude prompts, and formats context with contact, memories, and recent messages. Updates npm scripts to set SERVICE_CONTEXT for all services. MCP client now staggers startup based on SERVICE_CONTEXT to reduce resource contention.",
+      "repo": "autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub",
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "stats": {
+        "added": 117,
+        "deleted": 27,
+        "files": 8
+      },
+      "files": [
+        {
+          "file": "config/services/whatsapp.json",
+          "added": 1,
+          "deleted": 1
+        },
+        {
+          "file": "config/tool-filters.json",
+          "added": 21,
+          "deleted": 0
+        },
+        {
+          "file": "package.json",
+          "added": 9,
+          "deleted": 9
+        },
+        {
+          "file": "src/claude/prompt/system-prompt.js",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "file": "src/claude/service.js",
+          "added": 2,
+          "deleted": 1
+        },
+        {
+          "file": "src/core/platform-adapter.js",
+          "added": 12,
+          "deleted": 7
+        },
+        {
+          "file": "src/platforms/whatsapp/adapter.js",
+          "added": 55,
+          "deleted": 9
+        },
+        {
+          "file": "src/services/mcp-client.js",
+          "added": 16,
+          "deleted": 0
+        }
+      ]
+    }
+  ],
+  "prs": [
+    {
+      "type": "pr",
+      "number": 39,
+      "title": "Fix/workflow improvements 2026 01 04",
+      "url": "https://github.com/verygoodplugins/autohub/pull/39",
+      "state": "OPEN",
+      "date": "2026-01-05T09:06:46Z",
+      "repo": "autohub",
+      "repoFull": "verygoodplugins/autohub",
+      "stats": {
+        "added": 12302,
+        "deleted": 6997,
+        "files": 41
+      },
+      "baseBranch": "main",
+      "headBranch": "fix/workflow-improvements-2026-01-04",
+      "mergeable": "MERGEABLE",
+      "commits": 8,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T09:12:45Z"
+        }
+      ],
+      "labels": []
+    },
+    {
+      "type": "pr",
+      "number": 41,
+      "title": "docs: Update MCP documentation and server implementation for Streamable HTTP support",
+      "url": "https://github.com/verygoodplugins/automem/pull/41",
+      "state": "OPEN",
+      "date": "2026-01-05T04:29:06Z",
+      "repo": "automem",
+      "repoFull": "verygoodplugins/automem",
+      "stats": {
+        "added": 822,
+        "deleted": 100,
+        "files": 8
+      },
+      "baseBranch": "main",
+      "headBranch": "feature/streamable-http-transport",
+      "mergeable": "MERGEABLE",
+      "commits": 4,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T04:34:19Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T07:34:25Z"
+        }
+      ],
+      "labels": [
+        "enhancement"
+      ]
+    },
+    {
+      "type": "pr",
+      "number": 21,
+      "title": "feat: upgrade SDK to 1.25.1 and add MCP registry support",
+      "url": "https://github.com/verygoodplugins/mcp-automem/pull/21",
+      "state": "OPEN",
+      "date": "2026-01-05T03:58:03Z",
+      "repo": "mcp-automem",
+      "repoFull": "verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 1256,
+        "deleted": 77,
+        "files": 18
+      },
+      "baseBranch": "main",
+      "headBranch": "feat/mcp-registry-support",
+      "mergeable": "MERGEABLE",
+      "commits": 2,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T04:03:26Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T04:35:34Z"
+        }
+      ],
+      "labels": []
+    },
+    {
+      "type": "pr",
+      "number": 13,
+      "title": "fix: use args array for Windows compatibility in Claude Desktop config",
+      "url": "https://github.com/verygoodplugins/mcp-freescout/pull/13",
+      "state": "MERGED",
+      "date": "2026-01-05T01:42:55Z",
+      "repo": "mcp-freescout",
+      "repoFull": "verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 4,
+        "deleted": 2,
+        "files": 1
+      },
+      "baseBranch": "main",
+      "headBranch": "fix/5-windows-readme-instruction-compatibility",
+      "mergeable": "UNKNOWN",
+      "commits": 1,
+      "reviews": [],
+      "labels": []
+    },
+    {
+      "type": "pr",
+      "number": 11,
+      "title": "Release/2.0.0",
+      "url": "https://github.com/verygoodplugins/mcp-freescout/pull/11",
+      "state": "MERGED",
+      "date": "2026-01-04T18:04:50Z",
+      "repo": "mcp-freescout",
+      "repoFull": "verygoodplugins/mcp-freescout",
+      "stats": {
+        "added": 7287,
+        "deleted": 3663,
+        "files": 19
+      },
+      "baseBranch": "main",
+      "headBranch": "release/2.0.0",
+      "mergeable": "UNKNOWN",
+      "commits": 18,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-04T18:10:10Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-04T23:38:05Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T00:31:51Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T01:14:04Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T01:32:02Z"
+        }
+      ],
+      "labels": []
+    },
+    {
+      "type": "pr",
+      "number": 19,
+      "title": "Add AutoMem Claude Code hooks for build/test/deploy capture",
+      "url": "https://github.com/verygoodplugins/mcp-automem/pull/19",
+      "state": "MERGED",
+      "date": "2026-01-04T18:01:01Z",
+      "repo": "mcp-automem",
+      "repoFull": "verygoodplugins/mcp-automem",
+      "stats": {
+        "added": 3023,
+        "deleted": 40,
+        "files": 22
+      },
+      "baseBranch": "main",
+      "headBranch": "fix/claude-code-hooks",
+      "mergeable": "UNKNOWN",
+      "commits": 6,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-04T18:07:18Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T00:42:39Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T01:07:28Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T01:49:40Z"
+        },
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-05T02:52:43Z"
+        }
+      ],
+      "labels": []
+    },
+    {
+      "type": "pr",
+      "number": 4,
+      "title": "Release/1.1",
+      "url": "https://github.com/verygoodplugins/mcp-local-wp/pull/4",
+      "state": "MERGED",
+      "date": "2026-01-04T14:29:53Z",
+      "repo": "mcp-local-wp",
+      "repoFull": "verygoodplugins/mcp-local-wp",
+      "stats": {
+        "added": 1225,
+        "deleted": 2328,
+        "files": 13
+      },
+      "baseBranch": "main",
+      "headBranch": "release/1.1",
+      "mergeable": "UNKNOWN",
+      "commits": 4,
+      "reviews": [
+        {
+          "author": "coderabbitai",
+          "state": "COMMENTED",
+          "submittedAt": "2026-01-04T14:35:26Z"
+        }
+      ],
+      "labels": []
+    }
+  ],
+  "repos": {
+    "automem": {
+      "commits": 3,
+      "additions": 891,
+      "deletions": 139,
+      "remoteUrl": "https://github.com/verygoodplugins/automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "automem"
+    },
+    "autohub": {
+      "commits": 9,
+      "additions": 14180,
+      "deletions": 8785,
+      "remoteUrl": "https://github.com/verygoodplugins/autohub",
+      "owner": "verygoodplugins",
+      "repoSlug": "autohub"
+    },
+    "uncensored-voice-server": {
+      "commits": 2,
+      "additions": 8166,
+      "deletions": 335,
+      "remoteUrl": "https://github.com/verygoodplugins/uncensored-voice-server",
+      "owner": "verygoodplugins",
+      "repoSlug": "uncensored-voice-server"
+    },
+    "autoapp": {
+      "commits": 2,
+      "additions": 1175,
+      "deletions": 774,
+      "remoteUrl": "https://github.com/verygoodplugins/AutoApp",
+      "owner": "verygoodplugins",
+      "repoSlug": "AutoApp"
+    },
+    "mcp-freescout": {
+      "commits": 19,
+      "additions": 16566,
+      "deletions": 7035,
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-freescout",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-freescout"
+    },
+    "mcp-toggl": {
+      "commits": 1,
+      "additions": 65,
+      "deletions": 0,
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-toggl",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-toggl"
+    },
+    "mcp-local-wp": {
+      "commits": 5,
+      "additions": 1237,
+      "deletions": 2340,
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-local-wp",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-local-wp"
+    },
+    "mcp-automem": {
+      "commits": 8,
+      "additions": 5588,
+      "deletions": 1426,
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-automem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-automem"
+    },
+    "mcp-ecosystem": {
+      "commits": 3,
+      "additions": 285,
+      "deletions": 39,
+      "remoteUrl": "https://github.com/verygoodplugins/mcp-ecosystem",
+      "owner": "verygoodplugins",
+      "repoSlug": "mcp-ecosystem"
+    },
+    "haven": {
+      "commits": 6,
+      "additions": 4797,
+      "deletions": 20,
+      "remoteUrl": "https://github.com/jack-arturo/haven",
+      "owner": "jack-arturo",
+      "repoSlug": "haven"
+    },
+    "sunset-voyages": {
+      "commits": 4,
+      "additions": 2572,
+      "deletions": 20,
+      "remoteUrl": "https://github.com/jack-arturo/sunset-voyages",
+      "owner": "jack-arturo",
+      "repoSlug": "sunset-voyages"
+    }
+  },
+  "stats": {
+    "additions": 55522,
+    "deletions": 20913,
+    "files": 500,
+    "commits": 62,
+    "prs": 7
+  }
+}
