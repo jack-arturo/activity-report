@@ -7,8 +7,11 @@ cd "$(dirname "$0")"
 
 export CLOUDFLARE_ACCOUNT_ID="2cc725912d479c0bd6c08fc24931a478"
 
+echo "🛠️ Building React App..."
+npm run build
+
 echo "🚀 Deploying activity-report to Cloudflare Pages..."
-npx wrangler pages deploy . --project-name=activity-report --branch=main --commit-dirty=true
+npx wrangler pages deploy dist --project-name=activity-report --branch=main --commit-dirty=true
 
 echo ""
 echo "✅ Deployed to: https://activity-report.pages.dev"
