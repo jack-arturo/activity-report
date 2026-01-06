@@ -15,11 +15,13 @@ Weekly transparency report showing developer activity across all projects.
 ## Deployment
 
 Manual deploy:
+
 ```bash
 ./deploy.sh
 ```
 
 Or via wrangler directly:
+
 ```bash
 npx wrangler pages deploy . --project-name=activity-report
 ```
@@ -58,4 +60,3 @@ activity-report/
 - [ ] Dark mode toggle
 - [ ] Interactive filtering by repo/date
 - [ ] Historical week-over-week comparison
-
