@@ -70,6 +70,39 @@
     .file-stats .deleted { color:var(--red);font-weight:600; }
     .memory-card { background:#F8FAFC;border-style:dashed; }
     .memory-tag { font-size:0.7rem;background:#E2E8F0;padding:0.1rem 0.4rem;border-radius:1rem;margin-right:0.25rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body { padding:1rem; }
+      .header { flex-direction:column;gap:1rem; }
+      h1 { font-size:1.75rem; }
+      .stats-row { flex-wrap:wrap;gap:0.75rem; }
+      .stat { min-width:70px;padding:0.75rem 1rem; }
+      .stat-val { font-size:1.25rem; }
+      .repos { padding:0.75rem; }
+      .repo-chip { font-size:0.7rem;padding:0.2rem 0.5rem; }
+      .pr-card { grid-template-columns:auto 1fr;gap:0.75rem; }
+      .pr-stats { grid-column:2;text-align:left;margin-top:0.5rem; }
+      .pr-meta { gap:0.5rem; }
+      .timeline { grid-template-columns:60px 1fr;gap:0 1rem; }
+      .time { font-size:0.7rem; }
+      .event { padding-left:1rem; }
+      .event-header { flex-direction:column;align-items:flex-start;gap:0.25rem; }
+      .event-msg { font-size:0.9rem; }
+    }
+    @media (max-width: 480px) {
+      body { padding:0.75rem; }
+      h1 { font-size:1.5rem; }
+      .stats-row { width:100%;justify-content:space-between; }
+      .stat { flex:1;min-width:0;padding:0.5rem; }
+      .stat-val { font-size:1rem; }
+      .stat-label { font-size:0.65rem; }
+      .timeline { grid-template-columns:50px 1fr;gap:0 0.5rem; }
+      .event-card { padding:0.5rem 0.75rem; }
+      .event-repo { font-size:0.6rem; }
+      .event-stats { font-size:0.6rem; }
+      .event-hash { font-size:0.6rem; }
+    }
   </style>
 </head>
 <body>
@@ -431,7 +464,7 @@
 
   <div class="section-title">📝 Commit Timeline</div>
   <div class="timeline">
-    <div class="day-marker">Tuesday, Jan 6</div>
+    <div class="day-header">Tuesday, Jan 6</div>
       <div class="time">11:03 AM</div>
       <div class="event" style="border-left-color:#06B6D440">
         <div class="event-dot" style="color:#06B6D4"></div>
@@ -2181,7 +2214,7 @@
         </div>
         </div>
       </div>
-    <div class="day-marker">Monday, Jan 5</div>
+    <div class="day-header">Monday, Jan 5</div>
       <div class="time">11:13 PM</div>
       <div class="event" style="border-left-color:#EF444440">
         <div class="event-dot" style="color:#EF4444"></div>
@@ -4941,7 +4974,7 @@
           
         </div>
       </div>
-    <div class="day-marker">Sunday, Jan 4</div>
+    <div class="day-header">Sunday, Jan 4</div>
       <div class="time">11:55 PM</div>
       <div class="event" style="border-left-color:#3B82F640">
         <div class="event-dot" style="color:#3B82F6"></div>
