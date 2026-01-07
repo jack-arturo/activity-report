@@ -44,12 +44,12 @@
     .pr-stats .deleted { color:var(--red); }
     
     /* Timeline */
-    .timeline { display:grid;grid-template-columns:90px 1fr;gap:0 2rem;width:100%; }
+    .timeline { display:grid;grid-template-columns:90px minmax(0,1fr);gap:0 2rem;width:100%; }
     .day-header { grid-column:1/-1;font-weight:600;color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;margin:2rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px dashed var(--border); }
     .time { text-align:right;font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--muted);padding-top:1rem; }
-    .event { position:relative;padding-left:1.5rem;border-left:2px solid var(--border);padding-bottom:1rem; }
+    .event { position:relative;padding-left:1.5rem;border-left:2px solid var(--border);padding-bottom:1rem;min-width:0; }
     .event-dot { position:absolute;left:-7px;top:1rem;width:12px;height:12px;border-radius:50%;background:var(--surface);border:3px solid currentColor; }
-    .event-card { background:var(--surface);border:1px solid var(--border);border-radius:0.5rem;padding:0.75rem 1rem;transition:all 0.15s; }
+    .event-card { background:var(--surface);border:1px solid var(--border);border-radius:0.5rem;padding:0.75rem 1rem;transition:all 0.2s ease;overflow:hidden;width:100%; }
     .event-card:hover { transform:translateX(4px);box-shadow:0 2px 8px rgba(0,0,0,0.05); }
     .event-header { display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;gap:1rem; }
     .event-repo { font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;white-space:nowrap; }
@@ -58,10 +58,10 @@
     .event-msg a { text-decoration:none; }
     .event-msg a:hover { text-decoration:underline; }
     .event-hash { font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--blue);background:rgba(59,130,246,0.1);padding:0.1rem 0.3rem;border-radius:3px;margin-left:0.5rem; }
-    .event-summary { margin-top:0.5rem;font-size:0.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace;font-style:italic; }
-    .event-files { margin-top:0.75rem;padding-top:0.75rem;border-top:1px dashed var(--border);font-size:0.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace;display:none; }
-    .event-card:hover .event-summary { display:none; }
-    .event-card:hover .event-files { display:block; }
+    .event-summary { margin-top:0.5rem;font-size:0.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace;font-style:italic;transition:opacity 0.2s ease,max-height 0.3s ease;max-height:50px;opacity:1;overflow:hidden; }
+    .event-files { margin-top:0.75rem;padding-top:0.75rem;border-top:1px dashed var(--border);font-size:0.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace;max-height:0;opacity:0;overflow:hidden;transition:opacity 0.2s ease 0.1s,max-height 0.3s ease,padding 0.2s ease;padding-top:0;margin-top:0;border-top:none; }
+    .event-card:hover .event-summary { max-height:0;opacity:0;margin-top:0; }
+    .event-card:hover .event-files { max-height:500px;opacity:1;padding-top:0.75rem;margin-top:0.75rem;border-top:1px dashed var(--border); }
     .file-line { display:flex;justify-content:space-between;align-items:center;margin-bottom:0.25rem;padding:0.25rem 0.5rem;background:var(--bg);border-radius:0.25rem; }
     .file-line:hover { background:var(--surface-hover); }
     .file-name { color:var(--text);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:0.75rem; }
@@ -2012,7 +2012,7 @@
           </div>
         
           <div class="file-line">
-            <span class="file-name"><em></span>
+            <span class="file-name">&lt;em&gt;</span>
             <div class="file-stats">
               
               
