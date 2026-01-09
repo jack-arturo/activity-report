@@ -1,0 +1,36 @@
+name: Daily Activity Report
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Daily at 9 AM UTC
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  generate:
+    runs-on: self-hosted  # Uses your Mac with access to local repos
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate report
+        run: node generate-rich-report.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Commit if changed
+        run: |
+          git config user.email "jack@autojack.ai"
+          git config user.name "AutoJack"
+          git add index.html activity-data.json
+          git diff --cached --quiet || git commit -m "chore: daily activity update"
+          git push
+
+      - name: Deploy to Cloudflare
+        run: npx wrangler pages deploy . --project-name=activity-report
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
